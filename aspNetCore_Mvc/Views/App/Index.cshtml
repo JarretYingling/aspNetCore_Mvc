@@ -1,0 +1,23 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "App Home Page";
+}
+
+<h1>@ViewData["FirstName"] @ViewData["LastName"]</h1>
+
+<h1>Page: @ViewData["PageName"] route</h1>
+
+<h3>Message: @ViewData["Message"]</h3>
+
+<h3>url Parameter 01: @ViewData["Parameter_01"]</h3>
+<h3>url Parameter 02: @ViewData["Parameter_02"]</h3>
+
+<a href="/App">/App</a>
+<br />
+<a href="/App/About/?param_01=anything&param_02=something_else">/App/About/?param_01=anything&param_02=something_else</a>
+<br />
+<a href="/App/Contact/?param_01=anything&param_02=something_else">/App/Contact/?param_01=anything&param_02=something_else</a>
+<br />
+<a href="/App/Privacy/?param_01=anything&param_02=something_else">/App/Privacy/?param_01=anything&param_02=something_else</a>
